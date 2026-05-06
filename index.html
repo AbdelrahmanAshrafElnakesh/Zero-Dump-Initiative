@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero Dump Initiative | Community-Led Environmental Action</title>
+    <meta
+      name="description"
+      content="Zero Dump Initiative is a youth-led movement organizing cleanup campaigns, developing local leaders, and driving sustainability through community action."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#eef8ee",
+                100: "#d9efd9",
+                600: "#4ea75a",
+                700: "#3f8f4b",
+                800: "#2f723a",
+                900: "#1f5128",
+              },
+              accent: {
+                400: "#dff3e2",
+                500: "#ffffff",
+              },
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(255,255,255,0.05), 0 20px 60px -25px rgba(22,50,24,0.6)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: radial-gradient(circle at 20% 0%, #4ea75a 0%, #2f723a 48%, #1f5128 100%);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 700ms ease, transform 700ms ease;
+      }
+
+      .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .stat-ring {
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.03));
+      }
+
+      .logo-mark path,
+      .logo-mark circle {
+        stroke: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="text-white antialiased selection:bg-accent-500 selection:text-brand-900">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-brand-900/80 backdrop-blur">
+      <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#home" class="flex items-center gap-3 text-xl font-semibold tracking-tight">
+          <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/80 bg-white/10">
+            <svg viewBox="0 0 48 48" class="logo-mark h-6 w-6 fill-none stroke-[2.8]">
+              <circle cx="24" cy="24" r="18"></circle>
+              <path d="M14 29c4-5 10-8 19-9"></path>
+              <path d="M30 10l-8 10"></path>
+              <path d="M21.5 20l6.5 6.5"></path>
+              <path d="M19 33l5-2"></path>
+            </svg>
+          </span>
+          <span>Zero Dump Initiative</span>
+        </a>
+        <ul class="hidden gap-6 text-sm text-white/80 md:flex">
+          <li><a href="#impact" class="transition hover:text-white">Impact</a></li>
+          <li><a href="#leadership" class="transition hover:text-white">Leadership</a></li>
+          <li><a href="#hackathon" class="transition hover:text-white">Hackathon</a></li>
+          <li><a href="#sponsors" class="transition hover:text-white">Sponsors</a></li>
+        </ul>
+        <a
+          href="#join"
+          class="rounded-full border border-accent-400/60 px-4 py-2 text-sm font-medium text-accent-400 transition hover:bg-accent-500 hover:text-brand-900"
+          >Join Us</a
+        >
+      </nav>
+    </header>
+
+    <main id="home" class="relative overflow-hidden">
+      <section class="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-12 md:py-24">
+        <aside class="reveal md:col-span-4">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-glow">
+            <div class="mb-6 flex items-center gap-4 rounded-xl border border-white/20 bg-white/5 p-4">
+              <span class="flex h-14 w-14 items-center justify-center rounded-full border border-white/80 bg-white/10">
+                <svg viewBox="0 0 48 48" class="logo-mark h-9 w-9 fill-none stroke-[2.6]">
+                  <circle cx="24" cy="24" r="18"></circle>
+                  <path d="M13 29c5-6 12-9 22-9"></path>
+                  <path d="M31 9l-9 11"></path>
+                  <path d="M21.5 20l7 7"></path>
+                  <path d="M18 34l6-2"></path>
+                </svg>
+              </span>
+              <p class="text-sm font-semibold uppercase tracking-[0.2em] text-white/80">Zero Dump Identity</p>
+            </div>
+            <p class="mb-6 inline-flex rounded-full bg-accent-500/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-400">
+              Environmental Cleanup
+            </p>
+            <h1 class="text-4xl font-bold leading-tight md:text-5xl">Zero Dump Initiative</h1>
+            <p class="mt-5 text-white/75">
+              A youth-led movement launched in October 2023 to eliminate dumped waste and build cleaner, healthier
+              communities.
+            </p>
+
+            <div class="mt-8 space-y-4 text-sm text-white/85">
+              <div class="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+                <span>Volunteers Mobilized</span>
+                <strong class="font-semibold">1,074</strong>
+              </div>
+              <div class="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+                <span>Leaders Recruited</span>
+                <strong class="font-semibold">10</strong>
+              </div>
+              <div class="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+                <span>Governorates</span>
+                <strong class="font-semibold">3</strong>
+              </div>
+              <div class="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+                <span>Cleanups Coordinated</span>
+                <strong class="font-semibold">69</strong>
+              </div>
+              <div class="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+                <span>Waste Collected</span>
+                <strong class="font-semibold">950+ KG</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <div class="md:col-span-8">
+          <div class="reveal rounded-2xl border border-white/15 bg-brand-900/35 p-7 shadow-glow md:p-10">
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-accent-400">Community-driven environmental action</p>
+            <h2 class="mt-5 text-4xl font-bold leading-tight md:text-6xl">
+              Scaling volunteer cleanups with
+              <span class="italic text-accent-400">leadership development</span>
+            </h2>
+            <p class="mt-6 max-w-2xl text-lg text-white/80">
+              We supervise volunteers across Zagazig, Banha, and Helwan while partnering with local organizations to
+              run consistent cleanup events and awareness campaigns.
+            </p>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-2">
+              <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                <h3 class="font-semibold text-accent-400">Leadership</h3>
+                <p class="mt-2 text-sm text-white/80">
+                  Recruit and mentor regional leaders to scale impact and ensure consistent field execution.
+                </p>
+              </article>
+              <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                <h3 class="font-semibold text-accent-400">Partnerships</h3>
+                <p class="mt-2 text-sm text-white/80">
+                  Collaborate with NGOs, schools, and environmental service partners to amplify resources and reach.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact" class="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+        <div class="reveal grid gap-6 rounded-2xl border border-white/10 bg-white/5 p-7 md:grid-cols-3">
+          <div>
+            <p class="text-sm uppercase tracking-wider text-accent-400">Core mission</p>
+            <h3 class="mt-2 text-2xl font-semibold">Cleaner streets, shared responsibility, lasting change.</h3>
+          </div>
+          <p class="text-white/80 md:col-span-2">
+            Through weekly campaigns such as Green Friday and local activations, the initiative turns small community
+            actions into a sustained movement for sustainability and civic ownership.
+          </p>
+        </div>
+      </section>
+
+      <section id="leadership" class="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="reveal rounded-2xl border border-white/10 bg-brand-900/45 p-6">
+            <h4 class="text-lg font-semibold text-accent-400">Volunteer Operations</h4>
+            <p class="mt-3 text-sm text-white/80">
+              Coordinate cleanup logistics, participation, and local communication to maintain momentum.
+            </p>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-brand-900/45 p-6">
+            <h4 class="text-lg font-semibold text-accent-400">Area Leadership</h4>
+            <p class="mt-3 text-sm text-white/80">
+              Empower driven youth to lead sustainability efforts in new cities through structured ownership.
+            </p>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-brand-900/45 p-6">
+            <h4 class="text-lg font-semibold text-accent-400">Awareness Campaigns</h4>
+            <p class="mt-3 text-sm text-white/80">
+              Promote behavior change around waste disposal and environmental care in everyday public spaces.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="hackathon" class="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+        <div class="grid gap-7 md:grid-cols-12">
+          <div class="reveal rounded-2xl border border-white/15 bg-brand-900/35 p-7 md:col-span-8">
+            <p class="text-sm uppercase tracking-[0.2em] text-accent-400">Zero Boundaries Hackathon</p>
+            <h3 class="mt-3 text-3xl font-semibold">Innovation without limits, impact without borders</h3>
+            <p class="mt-4 text-white/80">
+              The initiative hosted a global online hackathon to empower students and builders to create high-impact
+              social-good and general-track projects.
+            </p>
+            <div class="mt-6 grid gap-3 sm:grid-cols-2">
+              <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">208 participants</div>
+              <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">Sep 7-14, 2025</div>
+              <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">$65,280 listed prize pool value</div>
+              <div class="rounded-xl border border-white/10 bg-white/5 p-4 text-sm">Themes: Social Good + General</div>
+            </div>
+          </div>
+
+          <div class="reveal stat-ring flex items-center justify-center rounded-2xl border border-accent-400/30 p-6 md:col-span-4">
+            <div class="text-center">
+              <p class="text-5xl font-bold text-accent-400">950+</p>
+              <p class="mt-1 text-sm uppercase tracking-wider text-white/70">KG collected</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsors" class="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+        <div class="reveal rounded-2xl border border-white/10 bg-white/5 p-7">
+          <h3 class="text-2xl font-semibold">Hackathon sponsors and ecosystem partners</h3>
+          <p class="mt-3 text-white/75">
+            Supported by organizations including CodeCrafters, UniBee, CoCalc, InterviewCake, InterviewBuddy,
+            CleanShot X, Art of Problem Solving, NexosAI, and XYZ.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">CodeCrafters</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">UniBee</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">CoCalc</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">InterviewCake</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">InterviewBuddy</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">CleanShot X</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">AoPS</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">NexosAI</span>
+            <span class="rounded-full border border-white/20 px-4 py-2 text-sm">XYZ</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="reveal rounded-2xl border border-accent-400/35 bg-accent-500/10 p-8 text-center shadow-glow">
+          <h3 class="text-3xl font-semibold">Be part of the next cleanup wave</h3>
+          <p class="mx-auto mt-3 max-w-2xl text-white/80">
+            Join volunteer campaigns, lead your local area, or support initiative programs through partnerships,
+            workshops, and events.
+          </p>
+          <div class="mt-6 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://eg.linkedin.com/company/zerodumpinitiative"
+              class="rounded-full bg-accent-500 px-5 py-3 font-semibold text-brand-900 transition hover:bg-accent-400"
+              >Explore Initiative Profile</a
+            >
+            <a
+              href="https://zero-boundaries-hackathon.devpost.com/"
+              class="rounded-full border border-white/30 px-5 py-3 font-semibold text-white transition hover:bg-white/10"
+              >View Hackathon Details</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const revealItems = document.querySelectorAll(".reveal");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+    </script>
+  </body>
+</html>
